@@ -1,0 +1,99 @@
+# If you want to move down the line, please use \n. e.g: MariaV3/rXAbdullah.
+# After changed, you have to restart the bot to use.
+# Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
+# Thanks to https://github.com/ntkhang03 for translate to English!
+
+# Main.js
+Goat.newVersionDetected=You are using version %1, the latest version is %2. Please update to use the bot better by typing into the console/cmd command: %3
+Goat.autoRestart1=Bot will auto restart in %1
+Goat.autoRestart2=Bot will auto restart by cron job: %1
+Goat.googleApiTokenExpired=Google API refresh token has expired or been revoked, please get a new token at https://developers.google.com/oauthplayground/
+login.currentlyLogged=Login in progress
+login.notFoundDirAccount=Cannot find file %1
+login.accountError=Please enter the full permission token in the form of %1 or cookie in the form of string %2 or cookie in the form of array:\n[\n  { name: %3, value: %4 },\n  { name: %5, value: %6 }\n]\n or\n[\n  { key: %3, value: %4 },\n  { key: %5, value: %6 }\n]\ninto the file %7
+login.loginSuccess=Successful login
+login.loginError=An error occurred while signing in
+login.errorNoti=An error occurred when retrieving the message
+login.refreshFbstateSuccess=Refreshed %1 file
+login.refreshFbstateError=An error occurred when refreshing the %1 file
+login.youAreBanned=You have been banned from the Goat-Bot project
+login.runBot=Launch bot successfully, start receiving messages from users
+login.notLoggedIn=An error occurred, please check your Facebook account again
+login.callBackError=An error occurred when callback listenMqtt
+login.userBanned=You've been banned from using a bot!!
+login.checkGbanError=An error occurred while checking GBAN, try update source to latest version (open cmd and type: node update)
+login.gbanMessage=You have been banned from the Goat-Bot project on %1 for the reason: %2\n» Time: %3
+login.gbanMessageToDate=You have been banned from the Goat-Bot project on %1 for the reason: %2\n» Time: %3\n» To date: %4
+login.gbanAdminMessage=User %1 has been banned from the Goat-Bot project on %2 for the reason: %3
+login.openServerUptimeSuccess=🚀 Opened uptime server: %1
+login.openServerUptimeError=An error has occurred, cannot open server uptime
+login.startBotSuccess=Bot has been started successfully, start receiving messages from users
+
+version.tooOldVersion=You are using a too old version of Goat-Bot, please update to the latest version by typing the command: %1 into the cmd/console/terminal/shell
+
+# includes/custom.js
+custom.refreshedFb_dtsg=Refreshed fb_dtsg and jazoest successfully
+custom.refreshedFb_dtsgError=An error occurred when refreshing fb_dtsg and jazoest
+
+# includes/rX/loadData.js
+loadData.loadThreadDataSuccess=Loaded %1 group's data successfully!
+loadData.loadUserDataSuccess=Loaded %1 user's data successfully!
+loadData.refreshingThreadData=Updating the information of the groups...
+loadData.refreshThreadDataSuccess=Updated information of %1 group!
+loadData.refreshThreadDataError=Something went wrong when updating the groups information!
+
+# includes/rX/loadScripts.js
+loadScripts.loadScriptsError=The %1 files have an error during loading:
+loadScripts.loadScriptsNotMatchOrigin=The %1 files do not match the original files on the github project, make sure that these command files are reliable:
+loadScripts.NOT_FOUND=NOT FOUND IN THE ORIGINAL SOURCE CODE:
+loadScripts.NOT_MATCH=DOES NOT MATCH THE ORIGINAL SOURCE CODE:
+
+# includes/handler/CheckData.js
+handlerCheckData.cantCreateThread=Groups with id '%1' cannot be written to the database!
+handlerCheckData.cantCreateUser=Users with id '%1' cannot be written to the database!
+
+# includes/handler/onStart.js
+handlerOnStart.userBanned=🛑 𝗕ᴀɴɴᴇᴅ! 𝗬ᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜᴇ 𝗕ᴏᴛ!\n────────────────\n» 𝗥ᴇᴀsᴏɴ: %1\n» 𝗧ɪᴍᴇ: %2\n» 𝗨sᴇʀ 𝗜ᴅ: %3\n────────────────
+handlerOnStart.threadBanned=🛑 𝗕ᴀɴɴᴇᴅ! 𝗧ʜɪs ɢʀᴏᴜᴘ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜᴇ 𝗕ᴏᴛ!\n────────────────\n» 𝗥ᴇᴀsᴏɴ: %1\n» 𝗧ɪᴍᴇ: %2\n» 𝗧ʜʀᴇᴀᴅ 𝗜ᴅ: %3\n────────────────
+handlerOnStart.onlyAdminBox=⚡ 𝗢ɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴜsᴇ ᴛʜɪs 𝗕ᴏᴛ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+handlerOnStart.onlyAdminBot=🔐 𝗕ᴏᴛ ᴀᴅᴍɪɴ ᴏɴʟʏ!\n» 𝗬ᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.
+handlerOnStart.commandNotFound=> 🎀\n𝗖ᴏᴍᴍᴀɴᴅ ɴᴏᴛ ғᴏᴜɴᴅ! 
+handlerOnStart.commandNotFoundSuggestion=> 🧃\n𝐓𝐡𝐢𝐬 𝐂𝐦𝐝 𝐢𝐬 𝐝𝐨𝐞𝐬𝐧'𝐭 𝐞𝐱𝐢𝐬𝐭 𝐡𝐞𝐫𝐞, 𝐖𝐞𝐫𝐞 𝐲𝐨𝐮 𝐭𝐫𝐲𝐢𝐧𝐠 𝐭𝐨 𝐮𝐬𝐞「 %2%1 」?
+handlerOnStart.commandNotFound2=⭕ sᴛʀɪᴄᴛ ᴘʀᴇғɪx ᴏɴʟʏ!\n» 𝗧ʏᴘᴇ %1help ᴛᴏ sᴇᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs 🛠️
+handlerOnStart.commandSyntaxError=⚠️ ɪɴᴄᴏʀʀᴇᴄᴛ sʏɴᴛᴀx!\n» ᴜsᴇ %1help %2 ᴛᴏ sᴇᴇ ᴄᴏʀʀᴇᴄᴛ ᴜsᴀɢᴇ.
+handlerOnStart.onlyAdmin=🛡️ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ᴄᴀɴ ᴜsᴇ "%1".
+handlerOnStart.onlyAdminToUseOnReply=🛡️ ᴀᴅᴍɪɴs ᴏɴʟʏ ғᴏʀ ʀᴇᴘʟʏ ғᴜɴᴄᴛɪᴏɴ "%1".
+handlerOnStart.onlyAdminToUseOnReaction=🛡️ ᴀᴅᴍɪɴs ᴏɴʟʏ ғᴏʀ ʀᴇᴀᴄᴛɪᴏɴ "%1".
+handlerOnStart.onlyDeveloperToUseOnReaction=😎 𝐎𝐧𝐥𝐲 𝐛𝐨𝐭'𝐬 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐚𝐜𝐭𝐢𝐨𝐧 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"
+handlerOnStart.onlyAdminToUseOnReaction=😴 𝐎𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐚𝐜𝐭𝐢𝐨𝐧 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"
+handlerOnStart.onlyAdminBot2=🔒 𝗕ᴏᴛ ᴀᴅᴍɪɴ ᴏɴʟʏ: "%1".
+handlerOnStart.onlyAdminBot2ToUseOnReply=🔒 𝗕ᴏᴛ ᴀᴅᴍɪɴ ʀᴇᴘʟʏ ᴏɴʟʏ "%1".
+handlerOnStart.onlyAdminBot2ToUseOnReaction=🔒 𝗕ᴏᴛ ᴀᴅᴍɪɴ ʀᴇᴀᴄᴛ ᴏɴʟʏ "%1".
+handlerOnStart.waitingForCommand=⏳ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ %1s ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀɢᴀɪɴ.
+handlerOnStart.errorOccurred=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred2=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onChat ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred3=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onReply ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred4=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onReaction ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred5=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onEvent ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred6=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onEvent ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.errorOccurred7=💥 ᴇʀʀᴏʀ [ %1 ]\n» ᴀᴛ onAnyEvent ɪɴ "%2"\n────────────────\n%3
+handlerOnStart.cannotFindCommandName=❌ ᴄᴀɴ'ᴛ ғɪɴᴅ ᴄᴏᴍᴍᴀɴᴅ ɴᴀᴍᴇ ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ʀᴇᴘʟʏ!
+handlerOnStart.cannotFindCommand=❌ ᴄᴀɴ'ᴛ ғɪɴᴅ command "%1" ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ʀᴇᴘʟʏ!
+
+
+# includes/autoUptime.js
+autoUptime.autoUptimeTurnedOn=AutoUptime mode turned on
+
+# includes/controller/index.js
+indexController.connectingMongoDB=Connecting a MONGODB database
+indexController.connectMongoDBSuccess=Successfully connected mongodb database!
+indexController.connectMongoDBError=An error occurred when connecting the Mongodb database:
+indexController.connectingMySQL=Connecting a SQLITE database
+indexController.connectMySQLSuccess=Successfully connected SQLITE database!
+indexController.connectMySQLError=An error occurred while connecting to a SQLITE database:
+
+# utils/utils.js
+utils.errorOccurred=❌ An error occurred:\n\n%1
+
+# for command
+command.restartedBot=Bot has been restarte
