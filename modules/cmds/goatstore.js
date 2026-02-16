@@ -8,7 +8,7 @@ module.exports = {
     name: "goatstore",
     aliases: ["gs", "market", "cmdstore"],
     version: "0.0.1",
-    role: 2,
+    role: 0,
     author: "ArYAN",
     shortDescription: {
       en: "📌 Goatstore - Your Command Marketplace"
@@ -57,13 +57,6 @@ module.exports = {
           return sendBeautifulMessage(
             "\n" +
             `╭─❯ 👑 𝗡𝗮𝗺𝗲\n╰ ${item.itemName}\n\n` +
-            `╭─❯ 🆔 𝗜𝗗\n╰ ${item.itemID}\n\n` +
-            `╭─❯ ⚙️ 𝗧𝘆𝗽𝗲\n╰ ${item.type || 'Unknown'}\n\n` +
-            `╭─❯ 📝 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻\n╰ ${item.description}\n\n` +
-            `╭─❯ 👨‍💻 𝗔𝘂𝘁𝗵𝗼𝗿\n╰ ${item.authorName}\n\n` +
-            `╭─❯ 📅 𝗔𝗱𝗱𝗲𝗱\n╰ ${bangladeshTime}\n\n` +
-            `╭─❯ 👀 𝗩𝗶𝗲𝘄𝘀\n╰ ${item.views}\n\n` +
-            `╭─❯ 💝 𝗟𝗶𝗸𝗲𝘀\n╰ ${item.likes}\n\n` +
             `╭─❯ 🔗 𝗥𝗮𝘄 𝗟𝗶𝗻𝗸\n╰ ${GoatStor}/raw/${item.rawID}`
           );
         }
