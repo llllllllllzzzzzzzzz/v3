@@ -46,13 +46,13 @@ module.exports = {
 
     const info = cmd.config;
     let msg = `╭─❖🌟 ${info.name.toUpperCase()} 🌟❖─╮\n\n`;
-    msg += `👑 Author  : ${info.author}\n`;
-    msg += `⚙️ Version : ${info.version}\n`;
-    msg += `📂 Category: ${info.category}\n`;
-    msg += `🕒 Cooldown: ${info.countDown || info.cooldowns || 3}s\n`;
-    msg += `🎯 Role    : ${info.role}\n`;
-    msg += `💬 Desc    : ${info.shortDescription || info.description || "No description"}\n`;
-    msg += `💡 Usage   : ${prefix}${info.guide?.en || info.usages || info.name}\n`;
+    msg += `👑 𝗔𝘂𝘁𝗵𝗼𝗿   : ${info.author}\n`;
+    msg += `⚙️ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻  : ${info.version}\n`;
+    msg += `📂 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 : ${info.category}\n`;
+    msg += `🕒 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: ${info.countDown || info.cooldowns || 3}s\n`;
+    msg += `🎯 𝗥𝗼𝗹𝗲     : ${info.role}\n`;
+    msg += `💬 𝗗𝗲𝘀𝗰    : ${info.shortDescription || info.description || "No description"}\n`;
+    msg += `💡 𝗨𝘀𝗮𝗴𝗲   : ${prefix}${info.guide?.en || info.usages || info.name}\n`;
     msg += info.aliases?.length ? `🔁 Aliases : ${info.aliases.join(", ")}\n` : "";
     msg += `\n╰────────• 🌸 •──────────╯`;
     return message.reply(msg);
